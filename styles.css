@@ -1,0 +1,411 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Abril Fatface', sans-serif;
+}
+
+body {
+    background: rgb(38, 29, 29);
+
+}
+/* scroll bar */ 
+
+::-webkit-scrollbar { 
+    width:12px; 
+}
+
+::-webkit-scrollbar-thumb { 
+    background: skyblue; 
+    border-radius: 6px;
+}
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 7px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #474350; 
+    transition: 0.5s;
+    z-index: 1000;
+}
+header.sticky  { 
+    background: black; 
+    box-shadow: 0 5px 20px rgba(41, 41, 41, 0.9);
+}
+
+header .logo {
+    /* this is for the line that says " logo at the very beginning of the HTML code */
+    position: relative;
+    color: white;
+    text-decoration: none;
+    font-size: 2em;
+    font-weight: 500;
+
+}
+
+header .nav {
+    /* navigation bar in the beginning of the HTML code (the navigation bar is at the very top of the page FYI */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+header ul li {
+    list-style: none;
+    margin: 30px;
+}
+
+header ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+header ul li a:hover {
+    /* hovering over the navigation bar ( makes the color teal in this case at the moment */
+    background-color: #1aeeef;
+    color: black;
+    box-shadow: 0 0 10px #1aeeef;
+}
+
+header .action .searchBx {
+    /* This is for these classes that we made in the HTML file (MAKE SURE TO CHANGE THIS LATER) */
+    padding: 5px;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    border-radius: 5px;
+}
+
+header .action .searchBx i {
+    font-size: 1.4em;
+    margin: 5px;
+    color: black;
+}
+
+header .action .searchBx input {
+    outline: none;
+    border: none;
+    font-size: 1em;
+    color: black;
+
+}
+
+/* Home Banner */
+
+.banner {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 0px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner .bg {
+    /* bg class this is the text next to the image*/
+    position: relative;
+    width: 100%;
+    min-height: flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner .bg .content {
+    width: 50%;
+    height: 100%;
+
+}
+
+.banner .bg .content h2 {
+    font-size: 4em;
+    color: white;
+    letter-spacing: 1px;
+
+}
+
+.banner .bg .content p {
+    font-size: 1em;
+    color: white;
+    letter-spacing: 1px;
+}
+
+.banner .bg .content a {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 20px 0;
+    border: 1px solid teal;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 5px;
+    color: white;
+    letter-spacing: 1px;
+}
+
+
+.banner .bg .content a:hover {
+    background: skyblue;
+    border: none;
+    color: black;
+    box-shadow: 0 0 10px skyblue;
+}
+
+.banner .bg img{ /* IMAGE AT FRONT PAGE */ 
+    width: 700px; 
+
+}
+
+/* about */ 
+
+.about { 
+
+    position: relative; 
+    width: 100%; 
+    min-height: 75vh;
+    padding: 0px 500px; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+
+}
+
+.about .contentBx { 
+
+width: 50%; 
+margin: 20px 
+
+}
+
+.about .contentBx h2 { 
+    font-size: 3em; 
+    font-weight: 700; 
+    color: white; 
+
+}
+
+.about .contentBx p { 
+
+    max-width: 1000px; 
+    text-align: justify; 
+    color: white; 
+} 
+.about .contentBx  a {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 20px 0;
+    border: 1px solid teal;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 5px;
+    color: white;
+    letter-spacing: 1px;
+}
+
+
+.about .contentBx a:hover {
+    background: skyblue;
+    border: none;
+    color: black;
+    box-shadow: 0 0 10px skyblue;
+}
+/* games */ 
+.games { 
+    padding: 0px 100px; 
+    width: 100%; 
+    min-height: 100vh; 
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    flex-direction: column; 
+    margin: 40px auto; 
+
+}
+
+.games h2 { /* features games title */ 
+    color: white; 
+    margin: 10px 0; 
+
+} 
+.games ul { 
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    flex-wrap: wrap; 
+    margin-bottom: 20px;
+}
+
+.games ul li{ /* all games, pc and upcoming tab */ 
+    list-style: none; 
+    padding: 10px 20px; 
+    border-radius: 5px; 
+    margin: 5px; 
+    letter-spacing: 1px; 
+    cursor: pointer; 
+    color: white; 
+} 
+
+.games ul li.active { 
+    background: skyblue; 
+    color: black; 
+    box-shadow: 0 0 10px skyblue;
+
+}
+
+.games .cardBx{ 
+    width: 100%; 
+    min-height: 100%;
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: center; 
+    align-items: center;
+}
+
+.games .cardBx .card { 
+    width: 230px; 
+    border-radius: 10px;
+    margin: 20px 40px; 
+    background: #31AFD4; 
+    overflow: hidden;
+
+}
+
+.games  .cardBx .card img{ 
+    width: 100%; 
+    height: 250px; 
+    object-fit: cover; 
+} 
+
+.games .cardBx .card .content { 
+    padding: 10px; 
+}
+
+.games .cardBx .card .content h4 { 
+    color: white; 
+    margin: 15px 0; 
+} 
+
+.games .cardBx .card .progress-line { 
+    position: relative; 
+    height: 10px; 
+    width: 100%; 
+    background: purple; /* behind prgress bar color */
+    margin-bottom: 15px; 
+    border-radius: 10px; 
+    transform: scaleX(1); 
+    transform-origin: left;
+    animation: animate 1s cubic-bezier(1,0,0.5,1) forwards; 
+} 
+
+.games .cardBx .card .progress-line span { 
+    position: absolute; 
+    height: 100%; 
+    width: 80%; 
+    border-radius: 10px; 
+    background: skyblue; 
+    box-shadow: 0 0 10px skyblue; 
+    transform: scaleX(0);
+    transform-origin: left;
+    animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+
+} 
+@keyframes animate { 
+    100% { 
+        transform: scaleX(1);
+    }
+}
+
+.games .cardBx .card .info{ 
+    border-top: 2px solid black; 
+    padding: 5px; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+
+}
+.games .cardBx .card .info p{
+    font-size: 1em; 
+    color: white; 
+
+}
+
+.games .cardBx .card .info p span { 
+    color: skyblue; 
+}
+
+.games .cardBx .card .info a {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 20px 0;
+    border: 1px solid skyblue;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 5px;
+    color: white;
+    letter-spacing: 1px;
+}
+
+
+.games .cardBx .card .info a:hover {
+    background: skyblue;
+    border: none;
+    color: black;
+    box-shadow: 0 0 10px skyblue; 
+} 
+/* hiding games depending on the tab that was chose */ 
+.games .cardBx .card.hide  { 
+    display: none; 
+
+}
+
+.tournaments { 
+    padding: 0px 100px; 
+    width: 100%; 
+    min-height: 100vh;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+}
+
+.tournaments h2{ 
+    color: white; 
+    margin: 10px 0; 
+} 
+
+.tournaments .boxBx { 
+
+    width: 100%; 
+    min-height: 100%; 
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+.tournaments .boxBx .box { 
+    width: 350px; 
+    border-radius: 10px; 
+    margin: 20px 40px; 
+    background: black; 
+    overflow: hidden; 
+} 
+
+.tournaments .boxBx .box img { 
+    width: 100%; 
+    height: 200px; 
+    object-fit: cover;
+}
+
+.tournaments .boxBx .box .content { 
+    padding: 10px; 
+}

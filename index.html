@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="" UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Competative Gaming Website Pixel Gaming</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Search up later about the href tag, charset and meta-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- This is the search bar icon-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo">Pixel Gaming</a> <!-- this creates a hyper link (the a tag)-->
+        <ul class="nav"> <!-- ul tag is unordered list like a bulleted list -->
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Games</a></li>
+            <li><a href="#">Tournaments</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="action"> <!-- div class is the division class (dividing a section)-->
+            <div class="searchBx"> <!-- COME BACK TO THIS LATER TO CHANGE THE NAME OF THE CLASS -->
+                <a href="#"><i class='bx bx-search'></i></a>
+                <input type="text" placeholder="Search Games"> <!-- Games search -->
+            </div>
+        </div>
+        <div class="toggleMenu"></div>
+    </header>
+
+    <!-- HOME BANNER -->
+    <div class="banner">
+        <div class="bg">
+            <div class="content">
+                <h2>Pixel Gaming, <br>
+                    Game and earn money</h2>
+                <p>This is the mini about part at the very front of the main page</p>
+                <a href="#" class="btn"> Join Now</a>
+            </div>
+            <img src="images/masterchief.png">
+        </div>
+    </div>
+    <!-- ABOUT SECTION -->
+    <div class="about">
+        <div class="contentBx">
+            <h2> About Pixel Gaming </h2>
+            <p> Pixel Gaming is an online gaming platform that fosters competitive play,
+                allowing you to challenge your skills against other competitors.
+                While our current selection features a limited number of playable games,
+                you can explore the game list to find your preferred challenges. </p>
+            <a href="#">Learn more </a>
+        </div>
+        <img src="images/kirby.png">
+    </div>
+    <!-- List of Games -->
+    <div class="games">
+        <h2> Featured Games </h2>
+        <ul>
+            <li class="list active" data-filter="all">All Games</li>
+            <li class="list" data-filter="pc"> PC Exclusive Games</li>
+            <li class="list" data-filter>Upcoming Games</li>
+        </ul>
+        <div class="cardBx">
+            <div class="card" data-item="pc">
+                <img src="images/Haloinfinite.png">
+                <div class="Content">
+                    <h4>Halo Infinite</h4>
+                    <div class="progress-line"> <span></span></div>
+                    <div class "info">
+                        <a href="#"> Play Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-item="pc">
+                <img src="images/melee.png">
+                <div class="Content">
+                    <h4>Super Smash Bros. Melee </h4>
+                    <div class="progress-line"> <span></span></div>
+                    <div class "info">
+                        <a href="#"> Play Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" data-item="pc">
+                <img src="images/smite.jpg">
+                <div class="Content">
+                    <h4>Smite</h4>
+                    <div class="progress-line"> <span></span></div>
+                    <div class "info">
+                        <a href="#"> Play Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" data-item="pc">
+                <img src="images/ultimate.jpg">
+                <div class="Content">
+                    <h4>Super Smash Bros. Ultimate</h4>
+                    <div class="progress-line"> <span></span></div>
+                    <div class "info">
+                        <a href="#"> Play Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" data-item="pc">
+                <img src="images/gears.png">
+                <div class="Content">
+                    <h4>Gears of War 3</h4>
+                    <div class="progress-line"> <span></span></div>
+                    <div class "info">
+                        <a href="#"> Play Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-item="pc">
+                <img src="images/cod.jpg">
+                <div class="Content">
+                    <h4>Call of Duty MWIII</h4>
+                    <div class="progress-line"> <span></span></div>
+                    <div class "info">
+                        <a href="#"> Play Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-item="pc">
+                <img src="images/valorant.jpg">
+                <div class="Content">
+                    <h4>Valorant</h4>
+                    <div class="progress-line"> <span></span></div>
+                    <div class "info">
+                        <a href="#"> Play Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" data-item="pc">
+                <img src="images/rocketleague.jpg">
+                <div class="Content">
+                    <h4>Rocket League</h4>
+                    <div class="progress-line"> <span></span></div>
+                    <div class "info">
+                        <a href="#"> Play Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" data-item="pc">
+                <img src="images/overwatch.jpg">
+                <div class="Content">
+                    <h4>Overwatch 2</h4>
+                    <div class="progress-line"> <span></span></div>
+                    <div class "info">
+                        <a href="#"> Play Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" data-item="pc">
+                <img src="images/fortnite.jpg">
+                <div class="Content">
+                    <h4>Fortnite</h4>
+                    <div class="progress-line"> <span></span></div>
+                    <div class "info">
+                        <a href="#"> Play Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <!-- Tournamnets-->
+    <div class="tournaments" > 
+        <h2> Live Tournaments</h2>
+        <div class="boxBx">
+            <img src="images/mw3.jpg" >
+            <div class="content">
+                <h4><span>50</span>Matches in progress...</h4>
+                <p>RANDOM STUFF TO BE TYPED HERE LATER ON </p>
+                <div class="btn" >
+                <a href="#" class="watch"> watch </a>
+                <a href="#" class="join"> join Now </a>
+
+                </div>
+            </div>
+        </div>
+
+        <script>
+            /* sticky nav bar */
+            window.addEventListener('scroll', function () {
+                var header = document.querySelector('header');
+                header.classList.toggle('sticky', window.scrollY > 0);
+
+            });
+
+            /* filterable cards */
+
+            let list = document.querySelectorAll('.list');
+            let card = document.querySelectorAll('.card');
+
+            for (let i = 0; i < list.length; i++) {
+                list[i].addEventListener('click', function () {
+                    for (let j = 0; j < list.length; j++) {
+                        list[j].classList.remove('active');
+                    }
+                    this.classList.add('active');
+
+                    let dataFilter = this.getAttribute('data-filter');
+                    for (let k = 0; k < card.length; k++) {
+                        card[k].classList.remove('active');
+                        card[k].classList.add('hide');
+                        if (card[k].getAttribute('data-item') == dataFilter || dataFilter == 'all') {
+                            card[k].classList.remove('hide');
+                            card[k].classList.add('active');
+                        }
+                    }
+                })
+            }
+        </script>
+</body>
+
+</html>
