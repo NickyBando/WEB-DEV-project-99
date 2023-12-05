@@ -77,7 +77,7 @@ header ul li a:hover {
 }
 
 header .action .searchBx {
-    /* This is for these classes that we made in the HTML file (MAKE SURE TO CHANGE THIS LATER) */
+   
     padding: 5px;
     margin: 5px;
     display: flex;
