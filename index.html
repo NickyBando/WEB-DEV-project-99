@@ -4,29 +4,31 @@
 <head>
     <meta charset="" UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title>Competative Gaming Website Pixel Gaming</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Search up later about the href tag, charset and meta-->
+    <title>Competitive Gaming Website Pixel Gaming</title>
+    <link rel="stylesheet" href="/css/styles.css"> 
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <!-- This is the search bar icon-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,500;0,600;0,700;1,200&family=Roboto:wght@100&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header>
-        <a href="#" class="logo">Pixel Gaming</a> <!-- this creates a hyper link (the a tag)-->
-        <ul class="nav"> <!-- ul tag is unordered list like a bulleted list -->
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Games</a></li>
-            <li><a href="#">Tournaments</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
+        <a href="#">
+            <img src="./images/pixel.png" alt="logo" class="logo"> <!-- Image of the Pixel Gaming logo -->
+        </a> 
+        <ul class="nav"> <!-- Class for the Navigation Bar-->
+            <li><a href="#">HOME</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#games">GAMES</a></li>
+            <li><a href="#tournaments">TOURNAMENTS</a></li>
+            <li><a href="/pages/contact.html">CONTACT</a></li> <!-- Sends user to seperate contact page-->
         </ul>
         <div class="action"> <!-- div class is the division class (dividing a section)-->
-            <div class="searchBx"> <!-- COME BACK TO THIS LATER TO CHANGE THE NAME OF THE CLASS -->
+            <div class="searchBx"> 
                 <a href="#"><i class='bx bx-search'></i></a>
-                <input type="text" placeholder="Search Games"> <!-- Games search -->
+                <input type="text" placeholder="Search Games"> <!-- Search bar at top left -->
             </div>
         </div>
         <div class="toggleMenu"></div>
@@ -36,16 +38,19 @@
     <div class="banner">
         <div class="bg">
             <div class="content">
-                <h2>Pixel Gaming, <br>
-                    Game and earn money</h2>
-                <p>This is the mini about part at the very front of the main page</p>
-                <a href="#" class="btn"> Join Now</a>
+                <h2>Pixel Gaming. </h2><br>
+                <p>Game and earn money</p>
+                <a href="/pages/login.html" class="btn"> Join Now</a>
             </div>
-            <img src="images/masterchief.png">
+            <div class="imgContainer">
+                <div class="gradient"></div>
+                <img src="images/masterchief.png" class="masterChief">
+            </div>
+            
         </div>
     </div>
     <!-- ABOUT SECTION -->
-    <div class="about">
+    <div class="about" id="about"> <!-- Scrolls to about because of ID -->
         <div class="contentBx">
             <h2> About Pixel Gaming </h2>
             <p> Pixel Gaming is an online gaming platform that fosters competitive play,
@@ -54,10 +59,10 @@
                 you can explore the game list to find your preferred challenges. </p>
             <a href="#">Learn more </a>
         </div>
-        <img src="images/kirby.png">
+        <img src="images/kirby.png" class="kirby">
     </div>
     <!-- List of Games -->
-    <div class="games">
+    <div class="games" id="games">
         <h2> Featured Games </h2>
         <ul>
             <li class="list active" data-filter="all">All Games</li>
@@ -65,118 +70,106 @@
             <li class="list" data-filter>Upcoming Games</li>
         </ul>
         <div class="cardBx">
-            <div class="card" data-item="pc">
-                <img src="images/Haloinfinite.png">
-                <div class="Content">
-                    <h4>Halo Infinite</h4>
-                    <div class="progress-line"> <span></span></div>
-                    <div class "info">
-                        <a href="#"> Play Now</a>
-                    </div>
+            <div class="shine column">
+                <div class="card" data-item="pc">
+                    <figure>
+                        <a href="/pages/halo.html">
+                            <img src="images/Haloinfinite.png" class="gameImg" style="width: 100%;">
+                        </a>
+                    </figure>
                 </div>
-            </div>
-            <div class="card" data-item="pc">
-                <img src="images/melee.png">
-                <div class="Content">
-                    <h4>Super Smash Bros. Melee </h4>
-                    <div class="progress-line"> <span></span></div>
-                    <div class "info">
-                        <a href="#"> Play Now</a>
-                    </div>
+            </div>  
+            <div class="shine column">
+                <div class="card" data-item="pc">
+                    <figure>
+                        <a href="/pages/ssbm.html">
+                            <img src="images/melee.png">
+                        </a>
+                    </figure>
                 </div>
-            </div>
+            </div>  
 
-            <div class="card" data-item="pc">
-                <img src="images/smite.jpg">
-                <div class="Content">
-                    <h4>Smite</h4>
-                    <div class="progress-line"> <span></span></div>
-                    <div class "info">
-                        <a href="#"> Play Now</a>
-                    </div>
+            <div class="shine column">
+                <div class="card" data-item="pc">
+                    <figure>
+                        <a href="#">
+                            <img src="images/smite.jpg">
+                        </a>
+                    </figure>
                 </div>
-            </div>
+            </div>  
 
-            <div class="card" data-item="pc">
-                <img src="images/ultimate.jpg">
-                <div class="Content">
-                    <h4>Super Smash Bros. Ultimate</h4>
-                    <div class="progress-line"> <span></span></div>
-                    <div class "info">
-                        <a href="#"> Play Now</a>
-                    </div>
+            <div class="shine column">
+                <div class="card" data-item="pc">
+                    <figure>
+                        <a href="#">
+                            <img src="images/ultimate.jpg">
+                        </a>
+                    </figure>
                 </div>
-            </div>
+            </div>  
 
-            <div class="card" data-item="pc">
-                <img src="images/gears.png">
-                <div class="Content">
-                    <h4>Gears of War 3</h4>
-                    <div class="progress-line"> <span></span></div>
-                    <div class "info">
-                        <a href="#"> Play Now</a>
-                    </div>
+            <div class="shine column">
+                <div class="card" data-item="pc">
+                    <figure>
+                        <a href="#">
+                            <img src="images/gears.png">
+                        </a>
+                    </figure>
                 </div>
-            </div>
-            <div class="card" data-item="pc">
-                <img src="images/cod.jpg">
-                <div class="Content">
-                    <h4>Call of Duty MWIII</h4>
-                    <div class="progress-line"> <span></span></div>
-                    <div class "info">
-                        <a href="#"> Play Now</a>
-                    </div>
+            </div>  
+            <div class="shine column">
+                <div class="card" data-item="pc">
+                    <figure>
+                        <a href="/pages/cod.html">
+                            <img src="images/cod.jpg">
+                        </a>
+                    </figure>
                 </div>
-            </div>
-            <div class="card" data-item="pc">
-                <img src="images/valorant.jpg">
-                <div class="Content">
-                    <h4>Valorant</h4>
-                    <div class="progress-line"> <span></span></div>
-                    <div class "info">
-                        <a href="#"> Play Now</a>
-                    </div>
+            </div>  
+            <div class="shine column">
+                <div class="card" data-item="pc">
+                    <figure>
+                        <a href="#">
+                            <img src="images/valorant.jpg">
+                        </a>
+                    </figure>
                 </div>
-            </div>
+            </div>  
 
-            <div class="card" data-item="pc">
-                <img src="images/rocketleague.jpg">
-                <div class="Content">
-                    <h4>Rocket League</h4>
-                    <div class="progress-line"> <span></span></div>
-                    <div class "info">
-                        <a href="#"> Play Now</a>
-                    </div>
+            <div class="shine column">
+                <div class="card" data-item="pc">
+                    <figure>
+                        <a href="#">
+                            <img src="images/rocketleague.jpg">
+                        </a>
+                    </figure>
                 </div>
-            </div>
+            </div>  
 
-            <div class="card" data-item="pc">
-                <img src="images/overwatch.jpg">
-                <div class="Content">
-                    <h4>Overwatch 2</h4>
-                    <div class="progress-line"> <span></span></div>
-                    <div class "info">
-                        <a href="#"> Play Now</a>
-                    </div>
+            <div class="shine column">
+                <div class="card" data-item="pc">
+                    <figure>
+                        <a href="#">
+                            <img src="images/overwatch.jpg">
+                        </a>
+                    </figure>
                 </div>
-            </div>
+            </div>  
 
-            <div class="card" data-item="pc">
-                <img src="images/fortnite.jpg">
-                <div class="Content">
-                    <h4>Fortnite</h4>
-                    <div class="progress-line"> <span></span></div>
-                    <div class "info">
-                        <a href="#"> Play Now</a>
-                    </div>
+            <div class="shine column">
+                <div class="card" data-item="pc">
+                    <figure>
+                        <a href="#">
+                            <img src="images/fortnite.jpg">
+                        </a>
+                    </figure>
                 </div>
-            </div>
-        </div>
-        
+            </div>    
     </div>
 
-    <!-- Tournamnets-->
-    <div class="tournaments" > 
+    <!-- Tournamnets Section-->
+    <div class="tournaments" id="tournaments"> 
         <h2> Live Tournaments</h2>
         <div class="boxBx">
             <img src="images/mw3.jpg" >
